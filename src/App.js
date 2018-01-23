@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './tippy.css';
 
 import { Tooltip } from 'react-tippy';
 
@@ -13,13 +14,14 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Tooltip
-          title="Welcome to React"
-          position="bottom"
-          trigger="click"
+          title="This is a popup!"
+          position="top"
+          trigger="mouseenter"
+          disabled="true"
         >
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+          <b>
+            Hover here for popup!
+          </b>
         </Tooltip>
       </div>
     );
